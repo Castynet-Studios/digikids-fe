@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --blue: rgb(0, 107, 139);
+  --blue: #3949ab;
+  --gradientBlue: linear-gradient(80deg, rgba(57,73,171,1) 0%, rgba(0,48,195,1) 50%);
   --blueTwo: rgb(4, 172, 236);
   --pink: rgb(204, 44, 128);
   --pinkTwo: rgb(255, 98, 180);
   --white: rgb(255, 255, 255);
   --whiteTwo: rgba(255, 255, 255, 0.9);
   --black: rgb(0, 0, 0);
-  --blackTwo: rgba(0, 0, 0, 0.1);
+  --blackTwo: rgba(0, 0, 0, 0.7);
+  --blackTransparent: rgba(0, 0, 0, 0.25);
   --accent: #e2c227;
   --accentTwo: #ed9a40;
   --grey: #f6f8f9;
@@ -16,11 +18,14 @@
   --navHeight: 60px;
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   --shadowTwo: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  --shadowThree: 4px 30px 100px -16px rgba(0, 0, 50, 0.3);
+  --font: "Poppins", sans-serif;
+  --transition: 0.25s ease-in-out;
 }
 
 html,
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font);
   overflow-x: hidden;
   background-color: var(--grey);
 }
