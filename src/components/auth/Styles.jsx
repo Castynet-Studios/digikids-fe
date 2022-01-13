@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Media } from "../../media";
+import { Media } from "media";
 
 export const Wrapper = styled.div`
   height: 100vh;
@@ -27,6 +27,14 @@ export const Content = styled.div`
 
 export const Info = styled.div`
   width: 50%;
+
+  @media (max-width: 700px) {
+    width: 30%;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const Form = styled.div`
@@ -37,6 +45,7 @@ export const Form = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: var(--transition);
 
   h3 {
     margin: 20px 0;
@@ -61,6 +70,14 @@ export const Form = styled.div`
     &::after {
       margin: 0 0 0 10px;
     }
+  }
+
+  @media (max-width: 700px) {
+    width: 70%;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
   }
 `;
 
@@ -102,12 +119,17 @@ export const LoginBtn = styled.button`
     background: var(--black);
 
     &:hover {
-      background: var(--blackTwo);
+      filter: brightness(0.85);
     }
   }
 
   &:hover {
-    background: var(--blueTwo);
+    filter: brightness(0.85);
     box-shadow: var(--shadowTwo);
   }
+`;
+
+export const IconWrapper = styled.span`
+  float: left;
+  margin-right: 5px;
 `;

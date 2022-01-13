@@ -1,7 +1,11 @@
+import Auth from "./components/auth/Auth";
+
 export default function App() {
   return (
     <>
-      <div data-testid="app">Hello World!</div>
+      <div data-testid="app">
+        <Auth />
+      </div>
     </>
   );
 }

@@ -2,13 +2,13 @@
 
 :root {
   --blue: #3949ab;
-  --gradientBlue: linear-gradient(80deg, rgba(57,73,171,1) 0%, rgba(0,48,195,1) 50%);
+  --gradientBlue: linear-gradient(120deg, #0082af 0%, #00adee 90%);
   --blueTwo: rgb(4, 172, 236);
   --pink: rgb(204, 44, 128);
   --pinkTwo: rgb(255, 98, 180);
   --white: rgb(255, 255, 255);
   --whiteTwo: rgba(255, 255, 255, 0.9);
-  --black: rgb(0, 0, 0);
+  --black: rgb(50, 50, 60);
   --blackTwo: rgba(0, 0, 0, 0.7);
   --blackTransparent: rgba(0, 0, 0, 0.25);
   --accent: #e2c227;

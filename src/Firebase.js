@@ -28,6 +28,7 @@ export const firebase = {
   auth: getAuth(firebaseApp),
   firestore: getFirestore(firebaseApp),
   storage: getStorage(),
+
   signInWithRedirect: () => signInWithRedirect(this.authProvider, this.auth),
   setPersistence: () => setPersistence(browserSessionPersistence, this.auth),
   cUsrWithEAndP: (e, p) => createUserWithEmailAndPassword(this.auth, e, p),
