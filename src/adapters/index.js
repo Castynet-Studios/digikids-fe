@@ -1,5 +1,4 @@
-import { signInWithPopup, signOut, cUsrWithEAndP, sInWithEAndP } from "./auth/auth";
+import * as auth from "./auth/auth";
+import * as usr from "./user/user";
 
-const Auth = { signInWithPopup, signOut, cUsrWithEAndP, sInWithEAndP };
-
-export default Auth;
+export { auth, usr };
