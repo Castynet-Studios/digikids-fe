@@ -1,13 +1,14 @@
 import { initializeApp } from "firebase/app";
 import {
-  GoogleAuthProvider,
   getAuth,
+  GoogleAuthProvider,
   signInWithRedirect,
   browserSessionPersistence,
   setPersistence,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
+  onAuthStateChanged,
 } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
@@ -22,16 +23,18 @@ const firebaseConfig = {
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
+const authProvider = new GoogleAuthProvider();
+const firestore = getFirestore(firebaseApp);
+const storage = getStorage(firebaseApp);
 
 export const firebase = {
-  authProvider: new GoogleAuthProvider(),
   auth: getAuth(firebaseApp),
-  firestore: getFirestore(firebaseApp),
-  storage: getStorage(),
 
-  signInWithRedirect: () => signInWithRedirect(this.authProvider, this.auth),
-  setPersistence: () => setPersistence(browserSessionPersistence, this.auth),
+  signInWithRedirect: () => signInWithRedirect(this.auth, authProvider),
+  setPersistence: () => setPersistence(this.auth, browserSessionPersistence),
   cUsrWithEAndP: (e, p) => createUserWithEmailAndPassword(this.auth, e, p),
   sInWithEAndP: (e, p) => signInWithEmailAndPassword(this.auth, e, p),
   signOut: () => signOut(this.auth),
+
+  onAuthStateChanged,
 };
