@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Media } from "media";
+import { Media } from "assets";
 
 export const Wrapper = styled.div`
   height: 100vh;

@@ -1,5 +1,5 @@
 import * as styled from "./Styles";
-import { Media } from "media";
+import { Media } from "assets";
 import { Icons } from "elements";
 
 export default function Auth() {
