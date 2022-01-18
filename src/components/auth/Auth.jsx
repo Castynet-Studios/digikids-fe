@@ -1,8 +1,11 @@
-import * as styled from "./Styles";
+import * as styled from "./Styles.Auth";
 import { Media } from "assets";
 import { Icons } from "elements";
+import { useApp } from "Context";
 
 export default function Auth() {
+  const { signInGoogle } = useApp();
+
   return (
     <>
       <styled.Wrapper data-testid="wrapper">
@@ -13,7 +16,7 @@ export default function Auth() {
           <styled.Form>
             <h3>Welcome back</h3>
             <p className="formPara">Login with</p>
-            <styled.LoginBtn>
+            <styled.LoginBtn onClick={() => signInGoogle()}>
               <styled.IconWrapper>
                 <Icons.Google size="20" />
               </styled.IconWrapper>

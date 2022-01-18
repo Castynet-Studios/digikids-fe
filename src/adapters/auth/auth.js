@@ -1,4 +1,4 @@
-import { firebase } from "Firebase";
+import { firebase } from "FirebaseController";
 
 const filterUser = (data) => {
   const user = data.user;
@@ -14,11 +14,10 @@ const filterUser = (data) => {
   } else return null;
 };
 
-export async function signInWithPopup() {
-  const persist = await firebase.auth.setPersistence();
-  const result = await persist(firebase.signInWithPopup());
-  const userData = filterUser(result);
-  return userData;
+export async function signInWithRedirect() {
+  firebase.setPersistence();
+  firebase.signInWithRedirect();
+  return { status: "redirected" };
 }
 
 export function signOut() {

@@ -1,23 +1,29 @@
 import React, { useContext, useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { auth, usr } from "adapters";
 
 const Context = React.createContext();
+
 export const useApp = () => useContext(Context);
 
 export const StateProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
   useEffect(() => {
     (async function () {
       try {
         const user = await usr.getUser();
+        navigate("/");
         setUser(user);
       } catch (error) {
-        console.log(error);
+        if (!pathname.includes("auth")) navigate("auth");
       }
     })();
-  }, []);
+  }, [navigate, pathname]);
 
   const registerEmail = (email, pass) => {
     try {
