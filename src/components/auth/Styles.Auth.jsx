@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { Media } from "assets";
 
 export const Wrapper = styled.div`
@@ -102,7 +103,7 @@ export const Intellect = styled.img`
   margin-bottom: -8px;
 `;
 
-export const LoginBtn = styled.button`
+export const LoginBtn = styled(Link)`
   display: block;
   margin: 10px 0;
   padding: 15px 25px;
@@ -114,6 +115,7 @@ export const LoginBtn = styled.button`
   border-radius: 1000px;
   box-shadow: var(--shadow);
   transition: var(--transition);
+  text-align: center;
 
   &:last-of-type {
     background: var(--black);
