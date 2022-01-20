@@ -1,14 +1,24 @@
+import { useState, useEffect } from "react";
 import Auth from "components/auth/Auth";
-import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 export default function AuthView() {
-  const { location } = useParams();
+  const [location, setLocation] = useState(null);
+  const { pathname } = useLocation();
 
-  console.log(useParams());
+  useEffect(() => {
+    if (pathname.includes("/auth/login")) {
+      setLocation("login");
+    } else if (pathname.includes("auth/register")) {
+      setLocation("register");
+    } else {
+      setLocation("auth");
+    }
+  }, [pathname]);
 
   return (
     <>
-      <Auth />
+      <Auth location={location} />
     </>
   );
 }
