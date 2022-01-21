@@ -46,11 +46,11 @@ export default function Auth(params) {
                 Register
               </styled.LoginBtn>
             </styled.Form>
-            <styled.Info>
-              <styled.Intellect src={Media.intellect} alt="the intellect" />
-            </styled.Info>
           </>
         )}
+        <styled.Info>
+          <styled.Intellect src={Media.intellect} alt="the intellect" />
+        </styled.Info>
       </styled.Content>
     </styled.Wrapper>
   );
