@@ -19,6 +19,7 @@ export const StateProvider = ({ children }) => {
         const user = await usr.getUser();
         navigate("/");
         setUser(user);
+        getUserProfile(user);
       } catch (error) {
         if (!pathname.includes("auth")) navigate("auth");
       }
@@ -51,6 +52,11 @@ export const StateProvider = ({ children }) => {
     } catch (error) {
       console.log(error);
     }
+  };
+
+  const getUserProfile = async (user) => {
+    const userProfile = await usr.getProfile(user);
+    console.log(userProfile);
   };
 
   return (
