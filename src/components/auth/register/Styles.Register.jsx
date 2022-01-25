@@ -1,17 +1,18 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Wrapper = styled.div`
   height: 100%;
   width: 50%;
   padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   transition: var(--transition);
   text-align: center;
 
   h3 {
-    margin: 10px 0;
+    margin: 20px 0 0;
   }
 
   .formPara {
@@ -36,7 +37,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const AuthBtn = styled.button`
+export const AuthBtn = styled(Link)`
   background: var(--black);
   display: block;
   margin: 10px 0;
@@ -60,6 +61,7 @@ export const Label = styled.label`
   padding: 15px 10px 2px;
   font-weight: 600;
   color: var(--blackTwo);
+  cursor: pointer;
 `;
 
 export const Input = styled.input`
