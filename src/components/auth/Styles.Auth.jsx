@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
   width: 800px;
   max-width: 95%;
-  height: 500px;
+  height: fit-content;
   backdrop-filter: blur(3px) saturate(200%);
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: var(--radius);
@@ -43,7 +43,7 @@ export const Form = styled.div`
   width: 50%;
   padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   transition: var(--transition);
