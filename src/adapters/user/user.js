@@ -11,4 +11,8 @@ export const getUser = async () => {
   return await user;
 };
 
-export const getProfile = async (user) => {};
+export const getProfile = async (user) => {
+  // get user from db
+  // if user is not in db, create new user & call myself
+  // else return user
+};
