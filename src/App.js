@@ -1,14 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import { AuthView } from "views";
+import { AuthView, DashView } from "views";
 
 export default function App() {
-  const Dash = () => {
-    return (
-      <>
-        <p>hello</p>
-      </>
-    );
-  };
+  
 
   const NotFound = () => {
     return (
@@ -22,7 +16,7 @@ export default function App() {
     <>
       <div data-testid="app">
         <Routes>
-          <Route path="/" element={<Dash />} />
+          <Route path="/" element={<DashView />} />
           <Route path="auth" element={<AuthView />} />
           <Route path="auth/login" element={<AuthView />} />
           <Route path="auth/register" element={<AuthView />} />
