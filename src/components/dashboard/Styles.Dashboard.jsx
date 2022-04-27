@@ -8,6 +8,11 @@ export const Top = styled.div`
     left: 237.17px;
     top: 102.24px;
     width: 80%;
+
+    @media (max-width: 700px) {
+        width: 90%;
+        left: 34.17px;
+    }
 `;
 export const Intro = styled.div`
     width: 305.33px;
@@ -24,6 +29,19 @@ export const Search = styled.div`
     border-radius: 16.6924px;
     padding: 10px 20px;
     display: flex;
+
+    .searchBar{
+        border: none;
+        outline: none;
+        width: 90%;
+
+        &::placeholder{
+            font-size: 14;
+            font-weight: 900;
+            color: #ABAEAF;
+          }
+      }
+      
 `;
 export const Middle = styled.div`
     position: absolute;
@@ -33,6 +51,11 @@ export const Middle = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 80%;
+    
+    @media (max-width: 700px) {
+        width: 90%;
+        left: 34.17px;
+    }
 `;
 export const MiddleLeft = styled.div`
     width: 70%;
@@ -41,6 +64,7 @@ export const MiddleLeft = styled.div`
     border-radius: 22.2565px;
     text-align: center;
     position: relative;
+
 `;
 export const MiddleRight = styled.div`
     width: 27%;
@@ -48,7 +72,8 @@ export const MiddleRight = styled.div`
     background: var(--white);
     border-radius: 22.2565px;
     text-align: center;
-    position: relative
+    position: relative;
+
 `;
 export const Bottom = styled.div`
     position: absolute;
@@ -58,6 +83,11 @@ export const Bottom = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 80%;
+
+    @media (max-width: 700px) {
+        width: 90%;
+        left: 34.17px;
+    }
 `;
 export const BottomLeft = styled.div`
     width: 27%;
@@ -100,15 +130,11 @@ export const Course = styled.div`
     background: rgba(154,179,245, .1);
     border-radius: 10.4327px;
     font-size: 15px;
-`;
-export const AddCourse = styled.div`
-    width: 18%;
-    height: 111.28px;
-    background: rgba(154,179,245, .1);
-    border-radius: 10.4327px;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
+    &:last-of-type{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 `;

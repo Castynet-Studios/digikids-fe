@@ -8,6 +8,10 @@ export const Sidebar = styled.div`
   top: 52px;
   background: var(--white);
   box-shadow: 8.34618px 0px 45.904px -36.8623px rgba(124, 124, 124, 0.25);
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
 export const Options = styled.div`
   position: relative;

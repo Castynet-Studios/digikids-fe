@@ -67,14 +67,3 @@ button:focus {
   outline-style: none;
   -moz-outline-style: none;
 }
-
-.searchBar{
-  border: none;
-  outline: none;
-}
-
-.searchBar::placeholder{
-  font-size: 14;
-  font-weight: 900;
-  color: #ABAEAF;
-}
