@@ -15,13 +15,14 @@ export const Navbar = () => {
           <styled.Link>
             Courses
             <styled.IconWrapper>
-              <Icons.Google size="10" />
-              {/* <Icons.Down /> */}
+              <Icons.Down size="10"/>
+              {/* <Icons.Google size="10" /> */}
             </styled.IconWrapper>
           </styled.Link>
           <styled.Link>
             Cart(0)
             <styled.IconWrapper>
+              {/* <Icons.Cart size="10" /> */}
               <Icons.Google size="10" />
             </styled.IconWrapper>
           </styled.Link>

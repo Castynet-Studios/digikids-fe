@@ -1,21 +1,26 @@
 import styled from "styled-components";
 
-export const Top = styled.div`
+export const Dash = styled.div`
+    width: 85%;
+    height: 100vh;
     position: absolute;
+    left: 15%;
+    top: 52px;
+    padding: 50px 30px 0;
+
+    @media (max-width: 1080px) {
+        width: 100%;
+        left: 0;   
+    }
+`
+export const Top = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    left: 237.17px;
-    top: 102.24px;
-    width: 80%;
-
-    @media (max-width: 700px) {
-        width: 90%;
-        left: 34.17px;
-    }
+    width: 100%;
 `;
 export const Intro = styled.div`
-    width: 305.33px;
+    width: 51%;
     height: 79.29px;
     color: var(--black);
     font-weight: 400;
@@ -44,18 +49,11 @@ export const Search = styled.div`
       
 `;
 export const Middle = styled.div`
-    position: absolute;
-    left: 237.17px;
-    top: 212.13px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
-    
-    @media (max-width: 700px) {
-        width: 90%;
-        left: 34.17px;
-    }
+    width: 100%;
+    margin: 20px 0 0;
 `;
 export const MiddleLeft = styled.div`
     width: 70%;
@@ -76,18 +74,12 @@ export const MiddleRight = styled.div`
 
 `;
 export const Bottom = styled.div`
-    position: absolute;
-    left: 237.17px;
-    top: 460.43px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
+    margin: 20px 0 0;
 
-    @media (max-width: 700px) {
-        width: 90%;
-        left: 34.17px;
-    }
 `;
 export const BottomLeft = styled.div`
     width: 27%;

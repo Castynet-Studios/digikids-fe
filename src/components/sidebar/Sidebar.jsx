@@ -79,15 +79,15 @@ export const Sidebar = () => {
         </styled.Options>
         <styled.Themes>
         <form onChange={onChange} style={{fontSize:"10px", display:"flex"}}>
-          <div className="blue" style={{background:"var(--themeBackgroundBlue)", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", margin:"0 10px", borderRadius:"16.6924px", padding:"5px"}}>
+          <div className="blue" style={{background:"var(--themeBackgroundBlue)", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", margin:"0 5px", borderRadius:"16.6924px", padding:"5px"}}>
             <input type="radio" name="background" id="blue" value="blue" />
             <label htmlFor="blue">Cool</label>
           </div>
-          <div className="pink" style={{background:"var(--themeBackgroundPink)", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", margin:"0 10px", borderRadius:"16.6924px", padding:"5px"}}>
+          <div className="pink" style={{background:"var(--themeBackgroundPink)", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", margin:"0 5px", borderRadius:"16.6924px", padding:"5px"}}>
             <input type="radio" name="background" id="pink" value="pink" />
             <label htmlFor="pink">Cherry</label>
           </div>
-          <div className="gray" style={{background:"var(--themeBackgroundGray)", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", margin:"0 10px", borderRadius:"16.6924px", padding:"3px"}}>
+          <div className="gray" style={{background:"var(--themeBackgroundGray)", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", margin:"0 5px", borderRadius:"16.6924px", padding:"1px"}}>
             <input type="radio" name="background" id="gray" value="gray" defaultChecked/>
             <label htmlFor="gray">Monochrome</label>
           </div>
