@@ -3,5 +3,6 @@ import finder from "./finder.svg";
 import intellect from "./intellect.svg";
 import messenger from "./messenger.svg";
 import whisperer from "./whisperer.svg";
+import logo from "./favicon.png"
 
-export const Media = { controller, finder, intellect, messenger, whisperer };
+export const Media = { controller, finder, intellect, messenger, whisperer, logo };

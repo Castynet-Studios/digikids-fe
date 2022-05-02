@@ -21,13 +21,21 @@
   --shadowThree: 4px 30px 100px -16px rgba(0, 0, 50, 0.3);
   --font: "Poppins", sans-serif;
   --transition: 0.25s ease-in-out;
+  --themeBackgroundBlue:#a9d5ee;
+  --themeBackgroundPink:#FFE1EA;
+  --themeBackgroundGray:#EAEBEB;
+  --themeBorderBlue: #FF4B5C;
+  --themeBorderPink: #9AB3F5;
+  --themeBorderGray: #0A033C;
+  --themeBackgroundColor: var(--themeBackgroundGray);
+  --themeBorderColor: var(--themeBorderGray);
 }
 
 html,
 body {
   font-family: var(--font);
   overflow-x: hidden;
-  background-color: var(--grey);
+  background-color: var(--themeBackgroundColor);
 }
 
 * {
