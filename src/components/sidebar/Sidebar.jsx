@@ -23,7 +23,7 @@ export const Sidebar = () => {
     <styled.Sidebar>  
       <styled.Options>
           <styled.IconsWrapper>
-          <Icons.RegisterUser size="30"/>
+          <Icons.Home size="30"/>
           </styled.IconsWrapper>
           <styled.OptionsText>
             Home
@@ -31,7 +31,7 @@ export const Sidebar = () => {
         </styled.Options>
         <styled.Options>
           <styled.IconsWrapper>
-          <Icons.RegisterUser size="30"/>
+          <Icons.Courses size="30"/>
           </styled.IconsWrapper>
           <styled.OptionsText>
             Courses
@@ -39,7 +39,7 @@ export const Sidebar = () => {
         </styled.Options>
         <styled.Options>
           <styled.IconsWrapper>
-          <Icons.RegisterUser size="30"/>
+          <Icons.Code size="30"/>
           </styled.IconsWrapper>
           <styled.OptionsText>
             My Code
@@ -47,7 +47,7 @@ export const Sidebar = () => {
         </styled.Options>
         <styled.Options>
           <styled.IconsWrapper>
-          <Icons.RegisterUser size="30"/>
+          <Icons.Calender size="30"/>
           </styled.IconsWrapper>
           <styled.OptionsText>
             Assignments
@@ -55,7 +55,7 @@ export const Sidebar = () => {
         </styled.Options>
         <styled.Options>
           <styled.IconsWrapper>
-          <Icons.RegisterUser size="30"/>
+          <Icons.Payment size="30"/>
           </styled.IconsWrapper>
           <styled.OptionsText>
             Payments
@@ -63,7 +63,7 @@ export const Sidebar = () => {
         </styled.Options>
         <styled.Options>
           <styled.IconsWrapper>
-          <Icons.RegisterUser size="30"/>
+          <Icons.Profile size="30"/>
           </styled.IconsWrapper>
           <styled.OptionsText>
             My Account
@@ -71,7 +71,7 @@ export const Sidebar = () => {
         </styled.Options>
         <styled.Options>
           <styled.IconsWrapper>
-          <Icons.RegisterUser size="30"/>
+          <Icons.Settings size="30"/>
           </styled.IconsWrapper>
           <styled.OptionsText>
             Settings

@@ -34,6 +34,7 @@ export const Search = styled.div`
     border-radius: 16.6924px;
     padding: 10px 20px;
     display: flex;
+    color: #ABAEAF;
 
     .searchBar{
         border: none;

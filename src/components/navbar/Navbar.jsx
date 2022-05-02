@@ -16,20 +16,18 @@ export const Navbar = () => {
             Courses
             <styled.IconWrapper>
               <Icons.Down size="10"/>
-              {/* <Icons.Google size="10" /> */}
             </styled.IconWrapper>
           </styled.Link>
           <styled.Link>
             Cart(0)
             <styled.IconWrapper>
-              {/* <Icons.Cart size="10" /> */}
-              <Icons.Google size="10" />
+              <Icons.Cart size="20" color="#FF6652" />
             </styled.IconWrapper>
           </styled.Link>
           <styled.Link>
             My Account
             <styled.IconWrapper>
-              <Icons.Google size="10" />
+              <Icons.Profile size="20" color="#9C4DF4"/>
             </styled.IconWrapper>
           </styled.Link>        
         </styled.Links>

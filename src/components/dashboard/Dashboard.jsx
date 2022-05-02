@@ -15,7 +15,7 @@ const Dashboard = () => {
               <p>See what's happening in your classes</p>
           </styled.Intro>
           <styled.Search>
-              <Icons.Google size="30" style={{float:"left", margin:"0 5px"}}/>
+              <Icons.Search size="30" style={{float:"left", margin:"0 5px"}}/>
               <input className="searchBar" type="text" placeholder="Search Courses" />
           </styled.Search>
         </styled.Top>
@@ -38,7 +38,7 @@ const Dashboard = () => {
             <styled.Course />
             <styled.Course />
             <styled.Course>
-                <Icons.RegisterUser size="20"/>
+                <Icons.Add size="20" color="rgb(117,121,231, .5)"/>
                 Add course
             </styled.Course>
           </styled.Courses>
